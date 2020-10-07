@@ -1,243 +1,144 @@
 <?php
-/** Russian (русский)
+/** Viossa
  *
- * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
  *
- * @author AVRS
- * @author Agilight
- * @author Ahonc
- * @author Aleksandrit
- * @author Alessandro
- * @author AlexSm
- * @author Alexander Sigachov (alexander.sigachov@gmail.com)
- * @author Alexandr Efremov
- * @author Altai uul
- * @author Am81
- * @author Amikeco
- * @author Amire80
- * @author Anonim.one
- * @author Askarmuk
- * @author Assele
- * @author BellaIlabekyan
- * @author Biathlon
- * @author Bouron
- * @author Chilin
- * @author Cinemantique
- * @author Claymore
- * @author Comp1089
- * @author Cryptocoryne
- * @author DCamer
- * @author Daniyar
- * @author Dim Grits
- * @author Don Alessandro
- * @author Ekulikovdo
- * @author Eleferen
- * @author Erdemaslancan
- * @author EugeneZelenko
- * @author Eugrus
- * @author Express2000
- * @author Ferrer
- * @author Flrn
- * @author G0rn
- * @author Gazeb
- * @author Geitost
- * @author Grigol
- * @author Haffman
- * @author HalanTul
- * @author Huuchin
- * @author Ignatus
- * @author Illusion
- * @author Iltever
- * @author Iluvatar
- * @author Incnis Mrsi
- * @author Iniquity
- * @author Innv
- * @author Ivan Shmakov
- * @author Jackie
- * @author JenVan
- * @author Jl
- * @author KPu3uC B Poccuu
- * @author Kaganer
- * @author Kalan
- * @author KorneySan
- * @author Kv75
- * @author Lockal
- * @author Lord Dimetr
- * @author Lunacy1911
- * @author Matma Rex
- * @author MaxBioHazard
- * @author MaxSem
- * @author Milicevic01
- * @author NBS
- * @author Nemo bis
- * @author Okras
- * @author Ola
- * @author Ole Yves
- * @author Putnik
- * @author Rave
- * @author Rubin
- * @author Rubin16
- * @author Sagan
- * @author Shirayuki
- * @author Sk
- * @author Soul Train
- * @author Spider
- * @author Sunpriat
- * @author TarzanASG
- * @author Temuri rajavi
- * @author Vago
- * @author VasilievVV
- * @author Volkov
- * @author Ytsukeng Fyvaprol
- * @author Александр Сигачёв
- * @author Гусейн
- * @author ОйЛ
- * @author Сай
- * @author Умар
- * @author Чаховіч Уладзіслаў
- * @author לערי ריינהארט
- * @author გიორგიმელა
+ * @author Nikomiko 
  */
 
 $namespaceNames = [
-	NS_MEDIA            => 'Медиа',
-	NS_SPECIAL          => 'Служебная',
-	NS_TALK             => 'Обсуждение',
-	NS_USER             => 'Участник',
-	NS_USER_TALK        => 'Обсуждение_участника',
-	NS_PROJECT_TALK     => 'Обсуждение_{{GRAMMAR:genitive|$1}}',
-	NS_FILE             => 'Файл',
-	NS_FILE_TALK        => 'Обсуждение_файла',
+	NS_MEDIA            => 'Zeshtoff',
+	NS_SPECIAL          => 'Tsatain',
+	NS_TALK             => 'Tsuihanu',
+	NS_USER             => 'Brukdjin',
+	NS_USER_TALK        => 'Brukdjin_Tsuihanu',
+	NS_PROJECT_TALK     => 'Tsuihanu_fu_$1',
+	NS_FILE             => 'Zeting',
+	NS_FILE_TALK        => 'Zeting_Tsuihanu',
 	NS_MEDIAWIKI        => 'MediaWiki',
-	NS_MEDIAWIKI_TALK   => 'Обсуждение_MediaWiki',
-	NS_TEMPLATE         => 'Шаблон',
-	NS_TEMPLATE_TALK    => 'Обсуждение_шаблона',
-	NS_HELP             => 'Справка',
-	NS_HELP_TALK        => 'Обсуждение_справки',
-	NS_CATEGORY         => 'Категория',
-	NS_CATEGORY_TALK    => 'Обсуждение_категории',
-];
-
-$namespaceAliases = [
-	'Изображение' => NS_FILE,
-	'Обсуждение_изображения' => NS_FILE_TALK,
+	NS_MEDIAWIKI_TALK   => 'Tsuihanu_MediaWiki',
+	NS_TEMPLATE         => 'polfal',
+	NS_TEMPLATE_TALK    => 'polfal_Tsuihanu',
+	NS_HELP             => 'Apu',
+	NS_HELP_TALK        => 'Apu_Tsuihanu',
+	NS_CATEGORY         => 'Hjerneklaani',
+	NS_CATEGORY_TALK    => 'Hjerneklaani_Tsuihanu',
 ];
 
 $namespaceGenderAliases = [
-	NS_USER      => [ 'male' => 'Участник', 'female' => 'Участница' ],
-	NS_USER_TALK => [ 'male' => 'Обсуждение_участника', 'female' => 'Обсуждение_участницы' ],
+	NS_USER      => [ 'male' => 'Brukdjin', 'female' => 'Brukdjin' ],
+	NS_USER_TALK => [ 'male' => 'Brukdjin_Tsuihanu', 'female' => 'Brukdjin_Tsuihanu' ],
 ];
 
 $specialPageAliases = [
-	'Activeusers'               => [ 'Активные_участники' ],
-	'Allmessages'               => [ 'Системные_сообщения' ],
-	'AllMyUploads'              => [ 'Все_мои_файлы' ],
-	'Allpages'                  => [ 'Все_страницы' ],
-	'Badtitle'                  => [ 'Недопустимое_название' ],
-	'Blankpage'                 => [ 'Пустая_страница' ],
-	'Block'                     => [ 'Заблокировать' ],
-	'Booksources'               => [ 'Источники_книг' ],
-	'BrokenRedirects'           => [ 'Разорванные_перенаправления' ],
-	'Categories'                => [ 'Категории' ],
-	'ChangeEmail'               => [ 'Сменить_e-mail', 'Сменить_почту' ],
-	'ChangePassword'            => [ 'Сменить_пароль' ],
-	'ComparePages'              => [ 'Сравнение_страниц' ],
-	'Confirmemail'              => [ 'Подтвердить_e-mail', 'Подтвердить_почту' ],
-	'Contributions'             => [ 'Вклад' ],
-	'CreateAccount'             => [ 'Создать_учётную_запись', 'Создать_пользователя', 'Зарегистрироваться' ],
-	'Deadendpages'              => [ 'Тупиковые_страницы' ],
-	'DeletedContributions'      => [ 'Удалённый_вклад' ],
-	'Diff'                      => [ 'Изменения' ],
-	'DoubleRedirects'           => [ 'Двойные_перенаправления' ],
-	'EditWatchlist'             => [ 'Править_список_наблюдения' ],
-	'Emailuser'                 => [ 'Письмо_участнику', 'Отправить_письмо' ],
+	'Activeusers'               => [ 'Asa_Brukdjin' ],
+	'Allmessages'               => [ 'Al_hanjena' ],
+	'AllMyUploads'              => [ 'Al_zeting_fu_un' ],
+	'Allpages'                  => [ 'Al_paperi' ],
+	'Badtitle'                  => [ 'Warunamae' ],
+	'Blankpage'                 => [ 'Mauge_paperi' ],
+	'Block'                     => [ 'Keshite' ],
+	'Booksources'               => [ 'Karalibre' ],
+	'BrokenRedirects'           => [ 'Gjendvera_perpjena' ],
+	'Categories'                => [ 'Hjerneklaani' ],
+	'ChangeEmail'               => [ 'Kawari_zepocht', 'Kawari_zepocht' ],
+	'ChangePassword'            => [ 'Kawari_kluchko' ],
+	'ComparePages'              => [ 'Sechigau_paperi' ],
+	'Confirmemail'              => [ 'Zettai_zepocht', 'Zettai_zepocht' ],
+	'Contributions'             => [ 'Antajena' ],
+	'CreateAccount'             => [ 'Neo_zepaperi', 'Neo_zepaperi', 'Neo_zepaperi' ],
+	'Deadendpages'              => [ 'Owaripaperi' ],
+	'DeletedContributions'      => [ 'Keshitjena_antaa' ],
+	'Diff'                      => [ 'Chig' ],
+	'DoubleRedirects'           => [ 'Niraz_gjendvera' ],
+	'EditWatchlist'             => [ 'Reforma_kjomitumam' ],
+	'Emailuser'                 => [ 'Antaa_zepocht', 'Antaa_pocht' ],
 	'ExpandTemplates'           => [ 'Развёртка_шаблонов' ],
-	'Export'                    => [ 'Экспорт', 'Выгрузка' ],
+	'Export'                    => [ 'Letstefal', 'Letstefal' ],
 	'Fewestrevisions'           => [ 'Редко_редактируемые' ],
 	'FileDuplicateSearch'       => [ 'Поиск_дубликатов_файлов' ],
-	'Filepath'                  => [ 'Путь_к_файлу' ],
-	'Import'                    => [ 'Импорт' ],
-	'Invalidateemail'           => [ 'Отменить_подтверждение_адреса' ],
-	'JavaScriptTest'            => [ 'Тестирование_JavaScript' ],
-	'BlockList'                 => [ 'Список_блокировок', 'Блокировки' ],
-	'LinkSearch'                => [ 'Поиск_ссылок' ],
-	'Listadmins'                => [ 'Список_администраторов' ],
-	'Listbots'                  => [ 'Список_ботов' ],
-	'Listfiles'                 => [ 'Список_файлов', 'Список_изображений' ],
+	'Filepath'                  => [ 'Kabanranja' ],
+	'Import'                    => [ 'Innenosi' ],
+	'Invalidateemail'           => [ 'Warunamae' ],
+	'JavaScriptTest'            => [ 'JavaScriptiskat' ],
+	'BlockList'                 => [ 'Djodjintumam', 'Djodjin' ],
+	'LinkSearch'                => [ 'Dvera_suhe' ],
+	'Listadmins'                => [ 'Jevaldjin_Tumam' ],
+	'Listbots'                  => [ 'Robototumam' ],
+	'Listfiles'                 => [ 'Zeting_tumam', 'Zeting_tumam' ],
 	'Listgrouprights'           => [ 'Права_групп_участников', 'Список_прав_групп' ],
 	'Listredirects'             => [ 'Список_перенаправлений' ],
 	'ListDuplicatedFiles'       => [ 'Список_файлов-дубликатов' ],
 	'Listusers'                 => [ 'Список_участников' ],
 	'Lockdb'                    => [ 'Заблокировать_БД', 'Заблокировать_базу_данных' ],
-	'Log'                       => [ 'Журналы', 'Журнал' ],
-	'Lonelypages'               => [ 'Изолированные_страницы' ],
-	'Longpages'                 => [ 'Длинные_страницы' ],
-	'MergeHistory'              => [ 'Объединение_историй' ],
-	'MIMEsearch'                => [ 'Поиск_по_MIME' ],
-	'Mostcategories'            => [ 'Самые_категоризованные' ],
-	'Mostimages'                => [ 'Самые_используемые_файлы' ],
-	'Mostinterwikis'            => [ 'Наибольшее_количество_интервики-ссылок' ],
-	'Mostlinked'                => [ 'Самые_используемые_страницы' ],
-	'Mostlinkedcategories'      => [ 'Самые_используемые_категории' ],
-	'Mostlinkedtemplates'       => [ 'Самые_используемые_шаблоны' ],
-	'Mostrevisions'             => [ 'Наибольшее_количество_версий' ],
-	'Movepage'                  => [ 'Переименовать_страницу', 'Переименование', 'Переименовать' ],
-	'Mycontributions'           => [ 'Мой_вклад' ],
-	'MyLanguage'                => [ 'Мой_язык' ],
-	'Mypage'                    => [ 'Моя_страница' ],
-	'Mytalk'                    => [ 'Моё_обсуждение' ],
-	'Myuploads'                 => [ 'Мои_загрузки' ],
-	'Newimages'                 => [ 'Новые_файлы' ],
-	'Newpages'                  => [ 'Новые_страницы' ],
-	'PasswordReset'             => [ 'Сброс_пароля' ],
-	'PermanentLink'             => [ 'Постоянная_ссылка' ],
-	'Preferences'               => [ 'Настройки' ],
-	'Prefixindex'               => [ 'Указатель_по_началу_названия' ],
-	'Protectedpages'            => [ 'Защищённые_страницы' ],
-	'Protectedtitles'           => [ 'Защищённые_названия' ],
-	'Randompage'                => [ 'Случайная_страница', 'Случайная' ],
-	'Randomredirect'            => [ 'Случайное_перенаправление' ],
-	'Recentchanges'             => [ 'Свежие_правки' ],
-	'Recentchangeslinked'       => [ 'Связанные_правки' ],
-	'Revisiondelete'            => [ 'Удаление_правки' ],
-	'Search'                    => [ 'Поиск' ],
-	'Shortpages'                => [ 'Короткие_страницы' ],
-	'Specialpages'              => [ 'Спецстраницы' ],
-	'Statistics'                => [ 'Статистика' ],
+	'Log'                       => [ 'Tetrad', 'Kakuli' ],
+	'Lonelypages'               => [ 'Paperi_utenandra' ],
+	'Longpages'                 => [ 'Pitka_paperi' ],
+	'MergeHistory'              => [ 'Viisk_dantumam' ],
+	'MIMEsearch'                => [ 'Suhe_mit_MIME' ],
+	'Mostcategories'            => [ 'Letstemange_hjerneklaani' ],
+	'Mostimages'                => [ 'Letstemange_riso' ],
+	'Mostinterwikis'            => [ 'Letstemange_mellanWiki' ],
+	'Mostlinked'                => [ 'Letste_dverjena' ],
+	'Mostlinkedcategories'      => [ 'Letste_dverjena_hjerneklaani' ],
+	'Mostlinkedtemplates'       => [ 'Letste_dverjena_polfal' ],
+	'Mostrevisions'             => [ 'Letste_kawarjena' ],
+	'Movepage'                  => [ 'Kiva_paperi', 'Kiva', 'Kiva' ],
+	'Mycontributions'           => [ 'Antajena_fun' ],
+	'MyLanguage'                => [ 'Glossa_fun' ],
+	'Mypage'                    => [ 'Paperi_fun' ],
+	'Mytalk'                    => [ 'Tsuihanu_fun' ],
+	'Myuploads'                 => [ 'Zeantajena_fun' ],
+	'Newimages'                 => [ 'Neo_riso' ],
+	'Newpages'                  => [ 'Neo_paperi' ],
+	'PasswordReset'             => [ 'Plustid_kluchko' ],
+	'PermanentLink'             => [ 'Utnshinu_dvera' ],
+	'Preferences'               => [ 'Sentakjena' ],
+	'Prefixindex'               => [ 'Ljevafesta' ],
+	'Protectedpages'            => [ 'Ziha_paperi' ],
+	'Protectedtitles'           => [ 'Ziha_namae' ],
+	'Randompage'                => [ 'Vupsipaperi', 'Vupsi' ],
+	'Randomredirect'            => [ 'Vupsi_gjendvera' ],
+	'Recentchanges'             => [ 'Dannen_kawari' ],
+	'Recentchangeslinked'       => [ 'Kawari_tsunagjena' ],
+	'Revisiondelete'            => [ 'Keshite_kawari' ],
+	'Search'                    => [ 'Suhe' ],
+	'Shortpages'                => [ 'Paperinen' ],
+	'Specialpages'              => [ 'Tsatainpaperi' ],
+	'Statistics'                => [ 'Laskushiru' ],
 	'Tags'                      => [ 'Метки' ],
-	'Unblock'                   => [ 'Разблокировка' ],
-	'Uncategorizedcategories'   => [ 'Некатегоризованные_категории' ],
-	'Uncategorizedimages'       => [ 'Некатегоризованные_файлы' ],
-	'Uncategorizedpages'        => [ 'Некатегоризованные_страницы' ],
-	'Uncategorizedtemplates'    => [ 'Некатегоризованные_шаблоны' ],
-	'Undelete'                  => [ 'Восстановить', 'Восстановление' ],
-	'Unlockdb'                  => [ 'Разблокировка_БД' ],
-	'Unusedcategories'          => [ 'Неиспользуемые_категории' ],
-	'Unusedimages'              => [ 'Неиспользуемые_файлы' ],
-	'Unusedtemplates'           => [ 'Неиспользуемые_шаблоны' ],
+	'Unblock'                   => [ 'Lakisuruk' ],
+	'Uncategorizedcategories'   => [ 'Naiklaanjena_hjerneklaani' ],
+	'Uncategorizedimages'       => [ 'Naiklaanjena_riso' ],
+	'Uncategorizedpages'        => [ 'Naiklaanjena_paperi' ],
+	'Uncategorizedtemplates'    => [ 'Naiklaanjena_polfal' ],
+	'Undelete'                  => [ 'Huske', 'Huske' ],
+	'Unlockdb'                  => [ 'Aukilakjena_DB' ],
+	'Unusedcategories'          => [ 'Naibrukjena_hjerneklaani' ],
+	'Unusedimages'              => [ 'Naibrukjena_riso' ],
+	'Unusedtemplates'           => [ 'Naibrukjena_polfal' ],
 	'Upload'                    => [ 'Загрузка' ],
 	'UploadStash'               => [ 'Скрытная_загрузка' ],
-	'Userlogin'                 => [ 'Вход' ],
-	'Userlogout'                => [ 'Завершение_сеанса', 'Выход' ],
-	'Userrights'                => [ 'Управление_правами' ],
-	'Version'                   => [ 'Версия' ],
-	'Wantedcategories'          => [ 'Требуемые_категории' ],
-	'Wantedfiles'               => [ 'Требуемые_файлы' ],
-	'Wantedpages'               => [ 'Требуемые_страницы' ],
-	'Wantedtemplates'           => [ 'Требуемые_шаблоны' ],
-	'Watchlist'                 => [ 'Список_наблюдения' ],
-	'Whatlinkshere'             => [ 'Ссылки_сюда' ],
-	'Withoutinterwiki'          => [ 'Без_интервики' ],
+	'Userlogin'                 => [ 'Shkinne' ],
+	'Userlogout'                => [ 'Owari_sèans', 'Shkekso' ],
+	'Userrights'                => [ 'Laki_fu_Brukdjin' ],
+	'Version'                   => [ 'Tidfal' ],
+	'Wantedcategories'          => [ 'Zheljena_hjerneklaani' ],
+	'Wantedfiles'               => [ 'Zheljena_riso' ],
+	'Wantedpages'               => [ 'Zheljena_paperi' ],
+	'Wantedtemplates'           => [ 'Zheljena_polfal' ],
+	'Watchlist'                 => [ 'Kjomitumam' ],
+	'Whatlinkshere'             => [ 'Dokokara_her' ],
+	'Withoutinterwiki'          => [ 'Utn_mellanWiki' ],
 ];
 
 $magicWords = [
-	'redirect'                  => [ '0', '#перенаправление', '#перенапр', '#REDIRECT' ],
-	'notoc'                     => [ '0', '__БЕЗ_ОГЛАВЛЕНИЯ__', '__БЕЗ_ОГЛ__', '__NOTOC__' ],
-	'nogallery'                 => [ '0', '__БЕЗ_ГАЛЕРЕИ__', '__NOGALLERY__' ],
-	'forcetoc'                  => [ '0', '__ОБЯЗАТЕЛЬНОЕ_ОГЛАВЛЕНИЕ__', '__ОБЯЗ_ОГЛ__', '__FORCETOC__' ],
+	'redirect'                  => [ '0', '#gjendvera', '#gjendvera', '#REDIRECT' ],
+	'notoc'                     => [ '0', '__UTN_TELTUMAM__', '__UTN_TELTUMAM__', '__NOTOC__' ],
+	'nogallery'                 => [ '0', '__UTN_RAZRISO__', '__NOGALLERY__' ],
+	'forcetoc'                  => [ '0', '__MUS_TELTUMAM__', '__MUS_TELTUMAM__', '__FORCETOC__' ],
 	'toc'                       => [ '0', '__ОГЛАВЛЕНИЕ__', '__ОГЛ__', '__TOC__' ],
 	'noeditsection'             => [ '0', '__БЕЗ_РЕДАКТИРОВАНИЯ_РАЗДЕЛА__', '__NOEDITSECTION__' ],
 	'currentmonth'              => [ '1', 'ТЕКУЩИЙ_МЕСЯЦ', 'ТЕКУЩИЙ_МЕСЯЦ_2', 'CURRENTMONTH', 'CURRENTMONTH2' ],
@@ -302,18 +203,18 @@ $magicWords = [
 	'img_frameless'             => [ '1', 'безрамки', 'frameless' ],
 	'img_page'                  => [ '1', 'страница=$1', 'страница $1', 'page=$1', 'page $1' ],
 	'img_upright'               => [ '1', 'сверхусправа', 'сверхусправа=$1', 'сверхусправа $1', 'upright', 'upright=$1', 'upright $1' ],
-	'img_border'                => [ '1', 'граница', 'border' ],
-	'img_baseline'              => [ '1', 'основание', 'baseline' ],
-	'img_sub'                   => [ '1', 'под', 'sub' ],
-	'img_super'                 => [ '1', 'над', 'super', 'sup' ],
-	'img_top'                   => [ '1', 'сверху', 'top' ],
-	'img_text_top'              => [ '1', 'текст-сверху', 'text-top' ],
-	'img_middle'                => [ '1', 'посередине', 'middle' ],
-	'img_bottom'                => [ '1', 'снизу', 'bottom' ],
-	'img_text_bottom'           => [ '1', 'текст-снизу', 'text-bottom' ],
-	'img_link'                  => [ '1', 'ссылка=$1', 'link=$1' ],
-	'img_alt'                   => [ '1', 'альт=$1', 'alt=$1' ],
-	'int'                       => [ '0', 'ВНУТР:', 'INT:' ],
+	'img_border'                => [ '1', 'tumam', 'border' ],
+	'img_baseline'              => [ '1', 'pol', 'baseline' ],
+	'img_sub'                   => [ '1', 'una', 'sub' ],
+	'img_super'                 => [ '1', 'oba', 'super', 'sup' ],
+	'img_top'                   => [ '1', 'hele', 'top' ],
+	'img_text_top'              => [ '1', 'obatasta', 'text-top' ],
+	'img_middle'                => [ '1', 'mellantel', 'middle' ],
+	'img_bottom'                => [ '1', 'unatel', 'bottom' ],
+	'img_text_bottom'           => [ '1', 'unatasta', 'text-bottom' ],
+	'img_link'                  => [ '1', 'dvera=$1', 'link=$1' ],
+	'img_alt'                   => [ '1', 'sama=$1', 'alt=$1' ],
+	'int'                       => [ '0', 'INNE:', 'INT:' ],
 	'sitename'                  => [ '1', 'НАЗВАНИЕ_САЙТА', 'SITENAME' ],
 	'ns'                        => [ '0', 'ПИ:', 'NS:' ],
 	'nse'                       => [ '0', 'ПИК:', 'NSE:' ],
@@ -325,25 +226,25 @@ $magicWords = [
 	'servername'                => [ '0', 'НАЗВАНИЕ_СЕРВЕРА', 'SERVERNAME' ],
 	'scriptpath'                => [ '0', 'ПУТЬ_К_СКРИПТУ', 'SCRIPTPATH' ],
 	'stylepath'                 => [ '0', 'ПУТЬ_К_СТИЛЮ', 'STYLEPATH' ],
-	'grammar'                   => [ '0', 'ПАДЕЖ:', 'GRAMMAR:' ],
-	'gender'                    => [ '0', 'ПОЛ:', 'GENDER:' ],
+	'grammar'                   => [ '0', 'GLOSSATROPOS:', 'GRAMMAR:' ],
+	'gender'                    => [ '0', 'KUN:', 'GENDER:' ],
 	'notitleconvert'            => [ '0', '__БЕЗ_ПРЕОБРАЗОВАНИЯ_ЗАГОЛОВКА__', '__NOTITLECONVERT__', '__NOTC__' ],
 	'nocontentconvert'          => [ '0', '__БЕЗ_ПРЕОБРАЗОВАНИЯ_ТЕКСТА__', '__NOCONTENTCONVERT__', '__NOCC__' ],
 	'currentweek'               => [ '1', 'ТЕКУЩАЯ_НЕДЕЛЯ', 'CURRENTWEEK' ],
 	'currentdow'                => [ '1', 'ТЕКУЩИЙ_ДЕНЬ_НЕДЕЛИ', 'CURRENTDOW' ],
-	'localweek'                 => [ '1', 'МЕСТНАЯ_НЕДЕЛЯ', 'LOCALWEEK' ],
-	'localdow'                  => [ '1', 'МЕСТНЫЙ_ДЕНЬ_НЕДЕЛИ', 'LOCALDOW' ],
-	'revisionid'                => [ '1', 'ИД_ВЕРСИИ', 'REVISIONID' ],
-	'revisionday'               => [ '1', 'ДЕНЬ_ВЕРСИИ', 'REVISIONDAY' ],
-	'revisionday2'              => [ '1', 'ДЕНЬ_ВЕРСИИ_2', 'REVISIONDAY2' ],
-	'revisionmonth'             => [ '1', 'МЕСЯЦ_ВЕРСИИ', 'REVISIONMONTH' ],
-	'revisionmonth1'            => [ '1', 'МЕСЯЦ_ВЕРСИИ_1', 'REVISIONMONTH1' ],
-	'revisionyear'              => [ '1', 'ГОД_ВЕРСИИ', 'REVISIONYEAR' ],
-	'revisiontimestamp'         => [ '1', 'ОТМЕТКА_ВРЕМЕНИ_ВЕРСИИ', 'REVISIONTIMESTAMP' ],
+	'localweek'                 => [ '1', 'HER_YK', 'LOCALWEEK' ],
+	'localdow'                  => [ '1', 'HER_KAJFDAG', 'LOCALDOW' ],
+	'revisionid'                => [ '1', 'FUGA_TIDFAL', 'REVISIONID' ],
+	'revisionday'               => [ '1', 'DAG_FU_TIDFAL', 'REVISIONDAY' ],
+	'revisionday2'              => [ '1', 'DAG_FU_TIDFAL_2', 'REVISIONDAY2' ],
+	'revisionmonth'             => [ '1', 'MWAI_FU_TIDFAL', 'REVISIONMONTH' ],
+	'revisionmonth1'            => [ '1', 'MWAI_FU_TIDFAL_1', 'REVISIONMONTH1' ],
+	'revisionyear'              => [ '1', 'TOSHI_FU_TIDFAL', 'REVISIONYEAR' ],
+	'revisiontimestamp'         => [ '1', 'TSATAINTID_FU_TIDFAL', 'REVISIONTIMESTAMP' ],
 	'revisionuser'              => [ '1', 'ВЕРСИЯ_УЧАСТНИКА', 'REVISIONUSER' ],
 	'plural'                    => [ '0', 'МНОЖЕСТВЕННОЕ_ЧИСЛО:', 'PLURAL:' ],
-	'fullurl'                   => [ '0', 'ПОЛНЫЙ_АДРЕС:', 'FULLURL:' ],
-	'fullurle'                  => [ '0', 'ПОЛНЫЙ_АДРЕС_2:', 'FULLURLE:' ],
+	'fullurl'                   => [ '0', 'HEL_DVERA:', 'FULLURL:' ],
+	'fullurle'                  => [ '0', 'HEL_DVERA_2:', 'FULLURLE:' ],
 	'lcfirst'                   => [ '0', 'ПЕРВАЯ_БУКВА_МАЛЕНЬКАЯ:', 'LCFIRST:' ],
 	'ucfirst'                   => [ '0', 'ПЕРВАЯ_БУКВА_БОЛЬШАЯ:', 'UCFIRST:' ],
 	'lc'                        => [ '0', 'МАЛЕНЬКИМИ_БУКВАМИ:', 'LC:' ],
@@ -366,26 +267,26 @@ $magicWords = [
 	'formatnum'                 => [ '0', 'ФОРМАТИРОВАТЬ_ЧИСЛО', 'FORMATNUM' ],
 	'padleft'                   => [ '0', 'ЗАПОЛНИТЬ_СЛЕВА', 'PADLEFT' ],
 	'padright'                  => [ '0', 'ЗАПОЛНИТЬ_СПРАВА', 'PADRIGHT' ],
-	'special'                   => [ '0', 'служебная', 'special' ],
+	'special'                   => [ '0', 'tsatain', 'special' ],
 	'defaultsort'               => [ '1', 'СОРТИРОВКА_ПО_УМОЛЧАНИЮ', 'КЛЮЧ_СОРТИРОВКИ', 'DEFAULTSORT:', 'DEFAULTSORTKEY:', 'DEFAULTCATEGORYSORT:' ],
-	'filepath'                  => [ '0', 'ПУТЬ_К_ФАЙЛУ:', 'FILEPATH:' ],
+	'filepath'                  => [ '0', 'KABANRANJA:', 'FILEPATH:' ],
 	'tag'                       => [ '0', 'метка', 'тег', 'тэг', 'tag' ],
-	'hiddencat'                 => [ '1', '__СКРЫТАЯ_КАТЕГОРИЯ__', '__HIDDENCAT__' ],
-	'pagesincategory'           => [ '1', 'СТРАНИЦ_В_КАТЕГОРИИ', 'PAGESINCATEGORY', 'PAGESINCAT' ],
-	'pagesize'                  => [ '1', 'РАЗМЕР_СТРАНИЦЫ', 'PAGESIZE' ],
-	'index'                     => [ '1', '__ИНДЕКС__', '__INDEX__' ],
-	'noindex'                   => [ '1', '__БЕЗ_ИНДЕКСА__', '__NOINDEX__' ],
-	'numberingroup'             => [ '1', 'ЧИСЛО_В_ГРУППЕ', 'NUMBERINGROUP', 'NUMINGROUP' ],
+	'hiddencat'                 => [ '1', '__TAINA_KLAANI__', '__HIDDENCAT__' ],
+	'pagesincategory'           => [ '1', 'PAPERI_INNE_HJERNEKLAANI', 'PAGESINCATEGORY', 'PAGESINCAT' ],
+	'pagesize'                  => [ '1', 'STORATAI_FU_PAPERI', 'PAGESIZE' ],
+	'index'                     => [ '1', '__HADJI__', '__INDEX__' ],
+	'noindex'                   => [ '1', '__UTNHADJI__', '__NOINDEX__' ],
+	'numberingroup'             => [ '1', 'KLAANI_ATAI', 'NUMBERINGROUP', 'NUMINGROUP' ],
 	'staticredirect'            => [ '1', '__СТАТИЧЕСКОЕ_ПЕРЕНАПРАВЛЕНИЕ__', '__STATICREDIRECT__' ],
-	'protectionlevel'           => [ '1', 'УРОВЕНЬ_ЗАЩИТЫ', 'PROTECTIONLEVEL' ],
-	'formatdate'                => [ '0', 'форматдаты', 'formatdate', 'dateformat' ],
-	'url_path'                  => [ '0', 'ПУТЬ', 'PATH' ],
-	'url_wiki'                  => [ '0', 'ВИКИ', 'WIKI' ],
-	'url_query'                 => [ '0', 'ЗАПРОС', 'QUERY' ],
-	'pagesincategory_all'       => [ '0', 'все', 'all' ],
-	'pagesincategory_pages'     => [ '0', 'страницы', 'pages' ],
-	'pagesincategory_subcats'   => [ '0', 'подкатегории', 'subcats' ],
-	'pagesincategory_files'     => [ '0', 'файлы', 'files' ],
+	'protectionlevel'           => [ '1', 'ZIHAATAI', 'PROTECTIONLEVEL' ],
+	'formatdate'                => [ '0', 'Tidfraztropos', 'formatdate', 'dateformat' ],
+	'url_path'                  => [ '0', 'NARUGA', 'PATH' ],
+	'url_wiki'                  => [ '0', 'WIKI', 'WIKI' ],
+	'url_query'                 => [ '0', 'SPØR', 'QUERY' ],
+	'pagesincategory_all'       => [ '0', 'al', 'all' ],
+	'pagesincategory_pages'     => [ '0', 'paperi', 'pages' ],
+	'pagesincategory_subcats'   => [ '0', 'inneklaani', 'subcats' ],
+	'pagesincategory_files'     => [ '0', 'riso', 'files' ],
 ];
 
 $dateFormats = [
@@ -408,11 +309,6 @@ $dateFormats = [
 ];
 
 $bookstoreList = [
-	'Поиск по библиотекам «Сигла»' => 'http://www.sigla.ru/results.jsp?f=7&t=3&v0=$1',
-	'Findbook.ru' => 'http://findbook.ru/search/d0?ptype=4&pvalue=$1',
-	'Яндекс.Маркет' => 'http://market.yandex.ru/search.xml?text=$1',
-	'ОЗОН' => 'http://www.ozon.ru/?context=advsearch_book&isbn=$1',
-	'Books.Ru' => 'http://www.books.ru/shop/search?query=$1',
 	'Amazon.com' => 'https://www.amazon.com/exec/obidos/ISBN=$1'
 ];
 
