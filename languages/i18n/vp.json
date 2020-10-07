@@ -5,7 +5,7 @@
     ]
   },
   "sidebar": "\n* navigation\n** mainpage|mainpage-description\n** recentchanges-url|recentchanges\n** randompage-url|randompage\n** helppage|help\n* SEARCH\n* TOOLBOX\n* LANGUAGES",
-  "tog-underline": "Подчёркивание ссылок:",
+  "tog-underline": "Unasen fu ryet:",
   "tog-hideminor": "Taina kawarjenanen per kawarjena danen",
   "tog-hidepatrolled": "Скрывать патрулированные правки в списке свежих правок",
   "tog-newpageshidepatrolled": "Скрывать отпатрулированные страницы в списке новых страниц",
@@ -53,7 +53,7 @@
   "underline-default": "Neofal os hadjifal fu zeryetsuhajena",
   "editfont-style": "Тип шрифта области редактирования:",
   "editfont-default": "Hadjifal fu zeryetsuhajena",
-  "editfont-monospace": "Samastuuratai tastajenafal",
+  "editfont-monospace": "Samastuur tastajenafal",
   "editfont-sansserif": "Tastajenafal mit nai jalaka",
   "editfont-serif": "Tastajenafal mit jalaka",
   "sunday": "воскресенье",
