@@ -6,6 +6,7 @@
  * @file
  *
  * @author Nikomiko 
+ * @author Paneku 
  */
 
 $namespaceNames = [
@@ -48,7 +49,7 @@ $specialPageAliases = [
 	'ComparePages'              => [ 'Sechigau_lehti' ],
 	'Confirmemail'              => [ 'Zettai_zepocht', 'Zettai_zepocht' ],
 	'Contributions'             => [ 'Antajena' ],
-	'CreateAccount'             => [ 'Neo_zelehti', 'Neo_zelehti', 'Neo_zelehti' ],
+	'CreateAccount'             => [ 'Neo_fuga', 'Neo_pashunfuga', 'Neo_fuga' ],
 	'Deadendpages'              => [ 'Owarilehti' ],
 	'DeletedContributions'      => [ 'Keshitjena_antaa' ],
 	'Diff'                      => [ 'Chig' ],
@@ -56,10 +57,10 @@ $specialPageAliases = [
 	'EditWatchlist'             => [ 'Reforma_kjomitumam' ],
 	'Emailuser'                 => [ 'Antaa_zepocht', 'Antaa_pocht' ],
 	'ExpandTemplates'           => [ 'Развёртка_шаблонов' ],
-	'Export'                    => [ 'Letstefal', 'Letstefal' ],
+	'Export'                    => [ 'Zheljenafal', 'Zheljenafal' ],
 	'Fewestrevisions'           => [ 'Редко_редактируемые' ],
 	'FileDuplicateSearch'       => [ 'Поиск_дубликатов_файлов' ],
-	'Filepath'                  => [ 'Kabanranja' ],
+	'Filepath'                  => [ 'Kabanleo' ],
 	'Import'                    => [ 'Innenosi' ],
 	'Invalidateemail'           => [ 'Warunamae' ],
 	'JavaScriptTest'            => [ 'JavaScriptiskat' ],
